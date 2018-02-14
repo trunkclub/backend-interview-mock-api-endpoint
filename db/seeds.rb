@@ -1,6 +1,6 @@
-(1..100).to_a.map do |num|
+(1..5000).to_a.map do |num|
   Shirt.create!(
-    available: [true, false].sample,
+    availability: (0..10).to_a.sample(3).join(','),
     name: "#{num}",
     price: "#{num}",
     sku: "#{num}",
@@ -9,9 +9,9 @@
   )
 end
 
-(1..100).to_a.map do |num|
+(1..5000).to_a.map do |num|
   Shoe.create!(
-    available: [true, false].sample,
+    availability: (0..10).to_a.sample(3).join(','),
     name: "#{num}",
     price: "#{num}",
     sku: "#{num}",

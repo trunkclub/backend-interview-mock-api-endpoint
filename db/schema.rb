@@ -14,26 +14,26 @@
 ActiveRecord::Schema.define(version: 20180214181906) do
 
   create_table "shirts", force: :cascade do |t|
-    t.boolean  "available"
+    t.string   "availability"
     t.text     "name"
     t.string   "price"
     t.string   "sku"
     t.string   "size"
     t.string   "color"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "shoes", force: :cascade do |t|
-    t.boolean  "available"
+    t.string   "availability"
     t.text     "name"
     t.string   "price"
     t.string   "sku"
     t.string   "size"
     t.string   "category"
     t.string   "color"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end

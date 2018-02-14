@@ -1,7 +1,7 @@
 class CreateShirts< ActiveRecord::Migration
   def change
     create_table :shirts do |t|
-      t.boolean     :available
+      t.string      :availability
       t.text        :name
       t.string      :price
       t.string      :sku

@@ -1,7 +1,7 @@
 class CreateShoes < ActiveRecord::Migration
   def change
     create_table :shoes do |t|
-      t.boolean     :available
+      t.string      :availability
       t.text        :name
       t.string      :price
       t.string      :sku
